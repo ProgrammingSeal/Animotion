@@ -1,6 +1,21 @@
 {
+  "item.animotion.baikal_seal_spawn_egg": "Baikal Seal Spawn Egg",
+  "item.animotion.crabeater_seal_spawn_egg": "Crabeater Seal Spawn Egg",
+  "item.animotion.grey_seal_spawn_egg": "Grey Seal Spawn Egg",
+  "item.animotion.harp_seal_spawn_egg": "Harp Seal Spawn Egg",
+  "item.animotion.leopard_seal_spawn_egg": "Leopard Seal Spawn Egg",
   "item.animotion.seal_spawn_egg": "Seal Spawn Egg",
+  "item.animotion.southern_elephant_seal_spawn_egg": "Southern Elephant Seal Spawn Egg",
+
+  "entity.animotion.baikal_seal": "Baikal Seal",
+  "entity.animotion.crabeater_seal": "Crabeater Seal",
+  "entity.animotion.grey_seal": "Grey Seal",
+  "entity.animotion.harp_seal": "Harp Seal",
+  "entity.animotion.leopard_seal": "LeopardSeal",
   "entity.animotion.seal": "Seal",
+  "entity.animotion.southern_elephant_seal": "Southern Elephant Seal",
+
+
 
 
   "itemgroup.animotion.mod_items": "Mod Items",

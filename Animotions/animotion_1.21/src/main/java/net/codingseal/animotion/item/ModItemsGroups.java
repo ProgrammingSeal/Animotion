@@ -15,8 +15,13 @@ public class ModItemsGroups {
             FabricItemGroup.builder().icon(() -> new ItemStack(Items.COD))
                     .displayName(Text.translatable("itemgroup.animotion.mod_items"))
                     .entries((displayContext, entries) -> {
-
+                        entries.add(ModItems.BAIKAL_SEAL_SPAWN_EGG);
+                        entries.add(ModItems.CRABEATER_SEAL_SPAWN_EGG);
+                        entries.add(ModItems.GREY_SEAL_SPAWN_EGG);
+                        entries.add(ModItems.HARP_SEAL_SPAWN_EGG);
+                        entries.add(ModItems.LEOPARD_SEAL_SPAWN_EGG);
                         entries.add(ModItems.SEAL_SPAWN_EGG);
+                        entries.add(ModItems.SOUTHERN_ELEPHANT_SEAL_SPAWN_EGG);
 
                     }).build());
 
@@ -25,9 +30,13 @@ public class ModItemsGroups {
             FabricItemGroup.builder().icon(() -> new ItemStack(ModItems.SEAL_SPAWN_EGG))
                     .displayName(Text.translatable("itemgroup.animotion.spawn_eggs"))
                     .entries((displayContext, entries) -> {
-
-
+                        entries.add(ModItems.BAIKAL_SEAL_SPAWN_EGG);
+                        entries.add(ModItems.CRABEATER_SEAL_SPAWN_EGG);
+                        entries.add(ModItems.GREY_SEAL_SPAWN_EGG);
+                        entries.add(ModItems.HARP_SEAL_SPAWN_EGG);
+                        entries.add(ModItems.LEOPARD_SEAL_SPAWN_EGG);
                         entries.add(ModItems.SEAL_SPAWN_EGG);
+                        entries.add(ModItems.SOUTHERN_ELEPHANT_SEAL_SPAWN_EGG);
                     }).build());
 
 

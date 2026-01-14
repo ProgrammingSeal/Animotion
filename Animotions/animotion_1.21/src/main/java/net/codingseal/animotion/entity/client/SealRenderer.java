@@ -16,7 +16,7 @@ public class SealRenderer extends MobEntityRenderer<SealEntity, SealModel<SealEn
 
     @Override
     public Identifier getTexture(SealEntity entity) {
-        return Identifier.of(Animotion.MOD_ID, "textures/entity/seal/seal.png");
+        return Identifier.of(Animotion.MOD_ID, "textures/entity/seals/seal/seal.png");
     }
 
     @Override
