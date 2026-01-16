@@ -5,7 +5,6 @@ import net.minecraft.entity.AnimationState;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
-import net.minecraft.entity.attribute.EntityAttribute;
 import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.mob.MobEntity;
 import net.minecraft.entity.passive.AnimalEntity;
@@ -17,11 +16,12 @@ import net.minecraft.recipe.Ingredient;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
-import net.minecraft.item.Item;
 
 public class SealEntity extends AnimalEntity {
     public final AnimationState idleAnimationState = new AnimationState();
     private int idleAnimationTimeout = 0;
+    public final AnimationState walkAnimationState = new AnimationState();
+    private int walkAnimationTimeout = 0;
 
     public SealEntity(EntityType<? extends AnimalEntity> entityType, World world) {
         super(entityType, world);
@@ -49,15 +49,33 @@ public class SealEntity extends AnimalEntity {
 
 
 
+    // V0.04
     private void setupAnimationStates() {
-        if (this.idleAnimationTimeout <= 0) {
-            this.idleAnimationTimeout = 100;
-            this.idleAnimationState.start(this.age);
-        } else {
-            --this.idleAnimationTimeout;
-        }
 
+        boolean moving = this.getVelocity().horizontalLengthSquared() > 1.0E-6;
+
+        if (moving) {
+            this.idleAnimationState.stop();
+
+            if (this.walkAnimationTimeout <= 0) {
+                this.walkAnimationTimeout = 10;
+                this.walkAnimationState.start(this.age);
+            } else {
+                --this.walkAnimationTimeout;
+            }
+        } else {
+            this.walkAnimationState.stop();
+            this.walkAnimationTimeout = 0;
+
+            if (this.idleAnimationTimeout <= 0) {
+                this.idleAnimationTimeout = 100;
+                this.idleAnimationState.start(this.age);
+            } else {
+                --this.idleAnimationTimeout;
+            }
+        }
     }
+
     @Override
     public void tick() {
         super.tick();

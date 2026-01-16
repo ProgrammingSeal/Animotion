@@ -13,9 +13,6 @@ import net.minecraft.entity.Entity;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.MathHelper;
 
-// Made with Blockbench 5.0.7
-// Exported for Minecraft version 1.17+ for Yarn
-// Paste this class into your mod and generate all required imports
 
 public class Grey_SealModel<T extends Grey_SealEntity> extends SinglePartEntityModel<T> {
     public static final EntityModelLayer GREY_SEAL = new EntityModelLayer(Identifier.of(Animotion.MOD_ID, "grey_seal"), "main");
@@ -104,6 +101,7 @@ public class Grey_SealModel<T extends Grey_SealEntity> extends SinglePartEntityM
 
         this.animateMovement(Grey_SealAnimations.IDLE,  limbSwing, limbSwingAmount, 2f, 2.5f );
         this.updateAnimation(entity.idleAnimationState, Grey_SealAnimations.IDLE, ageInTicks, 1f);
+        this.updateAnimation(entity.walkAnimationState, Grey_SealAnimations.GALLOPING, ageInTicks);
     }
 
     private void setHeadAngles(float headYaw, float headPitch) {

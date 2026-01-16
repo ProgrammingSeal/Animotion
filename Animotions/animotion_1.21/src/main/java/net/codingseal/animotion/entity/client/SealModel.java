@@ -4,16 +4,12 @@ import net.codingseal.animotion.Animotion;
 import net.codingseal.animotion.entity.custom.SealEntity;
 import net.minecraft.client.model.*;
 import net.minecraft.client.render.VertexConsumer;
-import net.minecraft.client.render.entity.model.EntityModel;
 import net.minecraft.client.render.entity.model.EntityModelLayer;
 import net.minecraft.client.render.entity.model.SinglePartEntityModel;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.MathHelper;
 
-// Made with Blockbench 5.0.7
-// Exported for Minecraft version 1.17+ for Yarn
-// Paste this class into your mod and generate all required imports
 public class SealModel<T extends  SealEntity> extends SinglePartEntityModel<T> {
     public static final EntityModelLayer SEAL = new EntityModelLayer(Identifier.of(Animotion.MOD_ID, "seal"), "main");
 
@@ -75,6 +71,7 @@ public class SealModel<T extends  SealEntity> extends SinglePartEntityModel<T> {
         this.setHeadAngles(netHeadYaw, headPitch);
 
         this.animateMovement(SealAnimations.IDLE,  limbSwing, limbSwingAmount, 2f, 2.5f );
+        this.updateAnimation(entity.walkAnimationState, SealAnimations.GALLOPING, ageInTicks);
         this.updateAnimation(entity.idleAnimationState, SealAnimations.IDLE, ageInTicks, 1f);
     }
 

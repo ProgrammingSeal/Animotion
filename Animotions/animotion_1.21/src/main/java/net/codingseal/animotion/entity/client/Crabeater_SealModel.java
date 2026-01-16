@@ -2,14 +2,11 @@ package net.codingseal.animotion.entity.client;
 
 import net.codingseal.animotion.Animotion;
 import net.codingseal.animotion.entity.custom.Crabeater_SealEntity;
-import net.codingseal.animotion.entity.custom.SealEntity;
 import net.minecraft.client.model.*;
 import net.minecraft.client.render.VertexConsumer;
-import net.minecraft.client.render.entity.model.EntityModel;
 import net.minecraft.client.render.entity.model.EntityModelLayer;
 import net.minecraft.client.render.entity.model.SinglePartEntityModel;
 import net.minecraft.client.util.math.MatrixStack;
-import net.minecraft.entity.Entity;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.MathHelper;
 
@@ -103,6 +100,7 @@ public class Crabeater_SealModel<T extends Crabeater_SealEntity> extends SingleP
 
         this.animateMovement(Crabeater_SealAnimations.IDLE,  limbSwing, limbSwingAmount, 2f, 2.5f );
         this.updateAnimation(entity.idleAnimationState, Crabeater_SealAnimations.IDLE, ageInTicks, 1f);
+        this.updateAnimation(entity.walkAnimationState, Crabeater_SealAnimations.GALLOPING, ageInTicks);
     }
 
     private void setHeadAngles(float headYaw, float headPitch) {

@@ -2,7 +2,6 @@ package net.codingseal.animotion.world;
 
 import net.codingseal.animotion.Animotion;
 import net.minecraft.registry.Registerable;
-import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.entry.RegistryEntry;

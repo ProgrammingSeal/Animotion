@@ -3,10 +3,8 @@ package net.codingseal.animotion.entity.client;
 
 import com.google.common.collect.Maps;
 import net.codingseal.animotion.Animotion;
-import net.codingseal.animotion.entity.custom.Baikal_SealVariant;
 import net.codingseal.animotion.entity.custom.Crabeater_SealEntity;
 import net.codingseal.animotion.entity.custom.Crabeater_SealVariant;
-import net.codingseal.animotion.entity.custom.SealEntity;
 import net.minecraft.client.render.VertexConsumerProvider;
 import net.minecraft.client.render.entity.EntityRendererFactory;
 import net.minecraft.client.render.entity.MobEntityRenderer;

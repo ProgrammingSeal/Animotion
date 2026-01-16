@@ -2,22 +2,15 @@ package net.codingseal.animotion.entity.client;
 
 import net.codingseal.animotion.Animotion;
 import net.codingseal.animotion.entity.custom.Leopard_SealEntity;
-import net.codingseal.animotion.entity.custom.SealEntity;
 import net.minecraft.client.model.*;
 import net.minecraft.client.render.VertexConsumer;
-import net.minecraft.client.render.entity.model.EntityModel;
 import net.minecraft.client.render.entity.model.EntityModelLayer;
 import net.minecraft.client.render.entity.model.SinglePartEntityModel;
 import net.minecraft.client.util.math.MatrixStack;
-import net.minecraft.entity.Entity;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.MathHelper;
 
 
-
-// Made with Blockbench 5.0.7
-// Exported for Minecraft version 1.17+ for Yarn
-// Paste this class into your mod and generate all required imports
 public class Leopard_SealModel<T extends Leopard_SealEntity> extends SinglePartEntityModel<T> {
     public static final EntityModelLayer LEOPARD_SEAL = new EntityModelLayer(Identifier.of(Animotion.MOD_ID, "leopard_seal"), "main");
 
@@ -105,6 +98,7 @@ public class Leopard_SealModel<T extends Leopard_SealEntity> extends SinglePartE
         this.setHeadAngles(netHeadYaw, headPitch);
 
         this.animateMovement(Leopard_SealAnimations.IDLE,  limbSwing, limbSwingAmount, 2f, 2.5f );
+        this.updateAnimation(entity.walkAnimationState, Leopard_SealAnimations.GALLOPING, ageInTicks);
         this.updateAnimation(entity.idleAnimationState, Leopard_SealAnimations.IDLE, ageInTicks, 1f);
     }
 

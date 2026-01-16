@@ -5,15 +5,12 @@ import com.google.common.collect.Maps;
 import net.codingseal.animotion.Animotion;
 import net.codingseal.animotion.entity.custom.Baikal_SealEntity;
 import net.codingseal.animotion.entity.custom.Baikal_SealVariant;
-import net.codingseal.animotion.entity.custom.SealEntity;
 import net.minecraft.client.render.VertexConsumerProvider;
 import net.minecraft.client.render.entity.EntityRendererFactory;
 import net.minecraft.client.render.entity.MobEntityRenderer;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Util;
-
-import java.util.HashMap;
 import java.util.Map;
 
 public class Baikal_SealRenderer extends MobEntityRenderer<Baikal_SealEntity, Baikal_SealModel<Baikal_SealEntity>> {

@@ -29,6 +29,9 @@ import org.jetbrains.annotations.Nullable;
 public class Baikal_SealEntity extends AnimalEntity {
     public final AnimationState idleAnimationState = new AnimationState();
     private int idleAnimationTimeout = 0;
+    public final AnimationState walkAnimationState = new AnimationState();
+    private int walkAnimationTimeout = 0;
+
 
     private static final TrackedData<Integer> DATA_ID_TYPE_VARIANT =
             DataTracker.registerData(Baikal_SealEntity.class, TrackedDataHandlerRegistry.INTEGER);
@@ -59,16 +62,36 @@ public class Baikal_SealEntity extends AnimalEntity {
     }
 
 
+// V0.04
+private void setupAnimationStates() {
 
-    private void setupAnimationStates() {
+    boolean moving = this.getVelocity().horizontalLengthSquared() > 1.0E-6;
+
+    if (moving) {
+        this.idleAnimationState.stop();
+
+        if (this.walkAnimationTimeout <= 0) {
+            this.walkAnimationTimeout = 10;
+            this.walkAnimationState.start(this.age);
+        } else {
+            --this.walkAnimationTimeout;
+        }
+    } else {
+        this.walkAnimationState.stop();
+        this.walkAnimationTimeout = 0;
+
         if (this.idleAnimationTimeout <= 0) {
             this.idleAnimationTimeout = 100;
             this.idleAnimationState.start(this.age);
         } else {
             --this.idleAnimationTimeout;
         }
-
     }
+}
+
+
+
+
     @Override
     public void tick() {
         super.tick();

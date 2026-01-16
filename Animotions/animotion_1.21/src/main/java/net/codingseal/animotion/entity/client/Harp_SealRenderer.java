@@ -3,10 +3,8 @@ package net.codingseal.animotion.entity.client;
 
 import com.google.common.collect.Maps;
 import net.codingseal.animotion.Animotion;
-import net.codingseal.animotion.entity.custom.Baikal_SealVariant;
 import net.codingseal.animotion.entity.custom.Harp_SealEntity;
 import net.codingseal.animotion.entity.custom.Harp_SealVariant;
-import net.codingseal.animotion.entity.custom.SealEntity;
 import net.minecraft.client.render.VertexConsumerProvider;
 import net.minecraft.client.render.entity.EntityRendererFactory;
 import net.minecraft.client.render.entity.MobEntityRenderer;

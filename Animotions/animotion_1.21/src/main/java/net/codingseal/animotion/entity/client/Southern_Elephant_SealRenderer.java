@@ -3,8 +3,7 @@ package net.codingseal.animotion.entity.client;
 
 import com.google.common.collect.Maps;
 import net.codingseal.animotion.Animotion;
-import net.codingseal.animotion.entity.custom.Baikal_SealVariant;
-import net.codingseal.animotion.entity.custom.SealEntity;
+
 import net.codingseal.animotion.entity.custom.Southern_Elephant_SealEntity;
 import net.codingseal.animotion.entity.custom.Southern_Elephant_SealVariant;
 import net.minecraft.client.render.VertexConsumerProvider;

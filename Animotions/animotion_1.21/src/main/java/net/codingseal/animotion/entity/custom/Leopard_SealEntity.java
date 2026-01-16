@@ -7,7 +7,6 @@ import net.minecraft.entity.EntityType;
 import net.minecraft.entity.SpawnReason;
 import net.minecraft.entity.ai.goal.*;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
-import net.minecraft.entity.attribute.EntityAttribute;
 import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.data.DataTracker;
 import net.minecraft.entity.data.TrackedData;
@@ -26,11 +25,12 @@ import net.minecraft.world.LocalDifficulty;
 import net.minecraft.world.ServerWorldAccess;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
-import net.minecraft.item.Item;
 
 public class Leopard_SealEntity extends AnimalEntity {
     public final AnimationState idleAnimationState = new AnimationState();
     private int idleAnimationTimeout = 0;
+    public final AnimationState walkAnimationState = new AnimationState();
+    private int walkAnimationTimeout = 0;
 
     private static final TrackedData<Integer> DATA_ID_TYPE_VARIANT =
             DataTracker.registerData(Leopard_SealEntity.class, TrackedDataHandlerRegistry.INTEGER);
@@ -61,15 +61,33 @@ public class Leopard_SealEntity extends AnimalEntity {
 
 
 
+    // V0.04
     private void setupAnimationStates() {
-        if (this.idleAnimationTimeout <= 0) {
-            this.idleAnimationTimeout = 100;
-            this.idleAnimationState.start(this.age);
-        } else {
-            --this.idleAnimationTimeout;
-        }
 
+        boolean moving = this.getVelocity().horizontalLengthSquared() > 1.0E-6;
+
+        if (moving) {
+            this.idleAnimationState.stop();
+
+            if (this.walkAnimationTimeout <= 0) {
+                this.walkAnimationTimeout = 10;
+                this.walkAnimationState.start(this.age);
+            } else {
+                --this.walkAnimationTimeout;
+            }
+        } else {
+            this.walkAnimationState.stop();
+            this.walkAnimationTimeout = 0;
+
+            if (this.idleAnimationTimeout <= 0) {
+                this.idleAnimationTimeout = 100;
+                this.idleAnimationState.start(this.age);
+            } else {
+                --this.idleAnimationTimeout;
+            }
+        }
     }
+
     @Override
     public void tick() {
         super.tick();

@@ -2,11 +2,8 @@ package net.codingseal.animotion.entity.client;
 
 import net.codingseal.animotion.Animotion;
 import net.codingseal.animotion.entity.custom.Baikal_SealEntity;
-import net.codingseal.animotion.entity.custom.SealEntity;
 import net.minecraft.client.model.*;
 import net.minecraft.client.render.VertexConsumer;
-import net.minecraft.client.render.entity.model.EntityModel;
-
 import net.minecraft.client.render.entity.model.EntityModelLayer;
 import net.minecraft.client.render.entity.model.SinglePartEntityModel;
 import net.minecraft.client.util.math.MatrixStack;
@@ -105,6 +102,9 @@ public class Baikal_SealModel<T extends Baikal_SealEntity> extends SinglePartEnt
 
         this.animateMovement(Baikal_SealAnimations.IDLE,  limbSwing, limbSwingAmount, 2f, 2.5f );
         this.updateAnimation(entity.idleAnimationState, Baikal_SealAnimations.IDLE, ageInTicks, 1f);
+        // V0.0.4
+        this.updateAnimation(entity.walkAnimationState, Baikal_SealAnimations.GALLOPING, ageInTicks);
+
     }
 
     private void setHeadAngles(float headYaw, float headPitch) {
