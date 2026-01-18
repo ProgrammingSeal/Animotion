@@ -42,6 +42,24 @@ public class ModEntities {
             EntityType.Builder.create(Southern_Elephant_SealEntity::new, SpawnGroup.CREATURE).
                     dimensions(1f, 2.f).build());
 
+    public static final EntityType<Gray_Reef_SharkEntity> GRAY_REEF_SHARK = Registry.register(Registries.ENTITY_TYPE,
+            Identifier.of(Animotion.MOD_ID, "gray_reef_shark"),
+            EntityType.Builder.create(Gray_Reef_SharkEntity::new, SpawnGroup.CREATURE).
+                    dimensions(1f, 2.f).build());
+    public static final EntityType<Great_White_SharkEntity> GREAT_WHITE_SHARK = Registry.register(Registries.ENTITY_TYPE,
+            Identifier.of(Animotion.MOD_ID, "great_white_shark"),
+            EntityType.Builder.create(Great_White_SharkEntity::new, SpawnGroup.CREATURE).
+                    dimensions(1f, 2.f).build());
+    public static final EntityType<Hammerhead_SharkEntity> HAMMERHEAD_SHARK = Registry.register(Registries.ENTITY_TYPE,
+            Identifier.of(Animotion.MOD_ID, "hammerhead_shark"),
+            EntityType.Builder.create(Hammerhead_SharkEntity::new, SpawnGroup.CREATURE).
+                    dimensions(1f, 2.f).build());
+    public static final EntityType<Tiger_SharkEntity> TIGER_SHARK = Registry.register(Registries.ENTITY_TYPE,
+            Identifier.of(Animotion.MOD_ID, "tiger_shark"),
+            EntityType.Builder.create(Tiger_SharkEntity::new, SpawnGroup.CREATURE).
+                    dimensions(1f, 2.f).build());
+
+
 
 
 

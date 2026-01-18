@@ -31,5 +31,10 @@ public class Animotion implements ModInitializer {
         FabricDefaultAttributeRegistry.register(ModEntities.SEAL, SealEntity.createAttributes());
         FabricDefaultAttributeRegistry.register(ModEntities.SOUTHERN_ELEPHANT_SEAL, Southern_Elephant_SealEntity.createAttributes());
 
+        FabricDefaultAttributeRegistry.register(ModEntities.GRAY_REEF_SHARK, Gray_Reef_SharkEntity.createAttributes());
+        FabricDefaultAttributeRegistry.register(ModEntities.GREAT_WHITE_SHARK, Great_White_SharkEntity.createAttributes());
+        FabricDefaultAttributeRegistry.register(ModEntities.HAMMERHEAD_SHARK, Hammerhead_SharkEntity.createAttributes());
+        FabricDefaultAttributeRegistry.register(ModEntities.TIGER_SHARK, Tiger_SharkEntity.createAttributes());
+
 	}
 }

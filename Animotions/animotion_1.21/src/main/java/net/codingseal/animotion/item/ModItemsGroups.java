@@ -22,7 +22,10 @@ public class ModItemsGroups {
                         entries.add(ModItems.LEOPARD_SEAL_SPAWN_EGG);
                         entries.add(ModItems.SEAL_SPAWN_EGG);
                         entries.add(ModItems.SOUTHERN_ELEPHANT_SEAL_SPAWN_EGG);
-
+                        entries.add(ModItems.GRAY_REEF_SHARK_SPAWN_EGG);
+                        entries.add(ModItems.TIGER_SHARK_SPAWN_EGG);
+                        entries.add(ModItems.HAMMERHEAD_SHARK_SPAWN_EGG);
+                        entries.add(ModItems.GREAT_WHITE_SHARK_SPAWN_EGG);
                     }).build());
 
     public static final ItemGroup SPAWN_EGG_GROUP = Registry.register(Registries.ITEM_GROUP,
@@ -37,6 +40,10 @@ public class ModItemsGroups {
                         entries.add(ModItems.LEOPARD_SEAL_SPAWN_EGG);
                         entries.add(ModItems.SEAL_SPAWN_EGG);
                         entries.add(ModItems.SOUTHERN_ELEPHANT_SEAL_SPAWN_EGG);
+                        entries.add(ModItems.GRAY_REEF_SHARK_SPAWN_EGG);
+                        entries.add(ModItems.TIGER_SHARK_SPAWN_EGG);
+                        entries.add(ModItems.HAMMERHEAD_SHARK_SPAWN_EGG);
+                        entries.add(ModItems.GREAT_WHITE_SHARK_SPAWN_EGG);
                     }).build());
 
 

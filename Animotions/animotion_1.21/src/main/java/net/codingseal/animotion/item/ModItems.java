@@ -23,6 +23,18 @@ public class ModItems {
     public static final Item SOUTHERN_ELEPHANT_SEAL_SPAWN_EGG = registerItem("southern_elephant_seal_spawn_egg",
             new SpawnEggItem(ModEntities.SOUTHERN_ELEPHANT_SEAL, 0x6b5a4a, 0xa48f7a, new Item.Settings()));
 
+
+    public static final Item GRAY_REEF_SHARK_SPAWN_EGG = registerItem("gray_reef_shark_spawn_egg",
+            new SpawnEggItem(ModEntities.GRAY_REEF_SHARK,  0x6F6F6A, 0xCFCFC8, new Item.Settings()));
+    public static final Item GREAT_WHITE_SHARK_SPAWN_EGG = registerItem("great_white_shark_spawn_egg",
+            new SpawnEggItem(ModEntities.GREAT_WHITE_SHARK,0x4A4F55,0xF2F2F2, new Item.Settings()));
+    public static final Item HAMMERHEAD_SHARK_SPAWN_EGG = registerItem("hammerhead_shark_spawn_egg",
+            new SpawnEggItem(ModEntities.HAMMERHEAD_SHARK, 0x5E6B64, 0xD8D2C4, new Item.Settings()));
+    public static final Item TIGER_SHARK_SPAWN_EGG = registerItem("tiger_shark_spawn_egg",
+            new SpawnEggItem(ModEntities.TIGER_SHARK, 0x7A6A4F, 0xC9B873, new Item.Settings()));
+
+
+
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(Animotion.MOD_ID, name), item);
     }
