@@ -33,6 +33,10 @@ public class ModItems {
     public static final Item TIGER_SHARK_SPAWN_EGG = registerItem("tiger_shark_spawn_egg",
             new SpawnEggItem(ModEntities.TIGER_SHARK, 0x7A6A4F, 0xC9B873, new Item.Settings()));
 
+    public static final Item PENGUIN_SPAWN_EGG = registerItem("penguin_spawn_egg",
+            new SpawnEggItem(ModEntities.PENGUIN,0x2F3437, 0xE6E6E2, new Item.Settings()));
+    public static final Item CRAB_SPAWN_EGG = registerItem("crab_spawn_egg",
+            new SpawnEggItem(ModEntities.CRAB, 0x8B4A2F, 0xE2B36F, new Item.Settings()));
 
 
     private static Item registerItem(String name, Item item) {

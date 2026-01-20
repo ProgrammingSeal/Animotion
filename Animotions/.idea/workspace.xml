@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="614dc790-ab41-487d-8ea5-264387b1ae95" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/Animotions.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animotion-1.21/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animotion-1.21/.github/workflows/build.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animotion-1.21/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animotion-1.21/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animotion-1.21/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animotion-1.21/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animotion-1.21/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animotion-1.21/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animotion-1.21/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animotion-1.21/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animotion-1.21/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animotion-1.21/src/main/generated/.cache/1b61419803a3083b9343c335e2b34a18fafa7c81" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animotion-1.21/src/main/generated/.cache/473005ee86b63d30c187759d9e938d1bffb4547a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animotion-1.21/src/main/generated/.cache/5a6b67fd0c2009d0c4c4d7a009d83be418f3a624" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animotion-1.21/src/main/generated/.cache/b273d4f4ea228eca2a83022e83a536479f64d188" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animotion-1.21/src/main/generated/.cache/e426641202efcd42ebc859be5627059ca94cba88" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animotion-1.21/src/main/generated/assets/animotion/models/item/baikal_seal_spawn_egg.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animotion-1.21/src/main/generated/assets/animotion/models/item/crabeater_seal_spawn_egg.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animotion-1.21/src/main/generated/assets/animotion/models/item/grey_seal_spawn_egg.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animotion-1.21/src/main/generated/assets/animotion/models/item/harp_seal_spawn_egg.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animotion-1.21/src/main/generated/assets/animotion/models/item/leopard_seal_spawn_egg.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animotion-1.21/src/main/generated/assets/animotion/models/item/seal_spawn_egg.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animotion-1.21/src/main/generated/assets/animotion/models/item/southern_elephant_seal_spawn_egg.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animotion-1.21/src/main/java/net/codingseal/animotion/Animotion.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animotion-1.21/src/main/java/net/codingseal/animotion/AnimotionClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animotion-1.21/src/main/java/net/codingseal/animotion/AnimotionDataGenerator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animotion-1.21/src/main/java/net/codingseal/animotion/datagen/ModBlockTagProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animotion-1.21/src/main/java/net/codingseal/animotion/datagen/ModItemTagProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animotion-1.21/src/main/java/net/codingseal/animotion/datagen/ModLootTableProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animotion-1.21/src/main/java/net/codingseal/animotion/datagen/ModModelProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animotion-1.21/src/main/java/net/codingseal/animotion/datagen/ModRecipeProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animotion-1.21/src/main/java/net/codingseal/animotion/datagen/ModRegistryDataGenerator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animotion-1.21/src/main/java/net/codingseal/animotion/entity/ModEntities.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animotion-1.21/src/main/java/net/codingseal/animotion/entity/client/Baikal_SealAnimations.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animotion-1.21/src/main/java/net/codingseal/animotion/entity/client/Baikal_SealModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animotion-1.21/src/main/java/net/codingseal/animotion/entity/client/Baikal_SealRenderer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animotion-1.21/src/main/java/net/codingseal/animotion/entity/client/Crabeater_SealAnimations.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animotion-1.21/src/main/java/net/codingseal/animotion/entity/client/Crabeater_SealModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animotion-1.21/src/main/java/net/codingseal/animotion/entity/client/Crabeater_SealRenderer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animotion-1.21/src/main/java/net/codingseal/animotion/entity/client/Grey_SealAnimations.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animotion-1.21/src/main/java/net/codingseal/animotion/entity/client/Grey_SealModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animotion-1.21/src/main/java/net/codingseal/animotion/entity/client/Grey_SealRenderer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animotion-1.21/src/main/java/net/codingseal/animotion/entity/client/Harp_SealAnimations.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animotion-1.21/src/main/java/net/codingseal/animotion/entity/client/Harp_SealModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animotion-1.21/src/main/java/net/codingseal/animotion/entity/client/Harp_SealRenderer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animotion-1.21/src/main/java/net/codingseal/animotion/entity/client/Leopard_SealAnimations.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animotion-1.21/src/main/java/net/codingseal/animotion/entity/client/Leopard_SealModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animotion-1.21/src/main/java/net/codingseal/animotion/entity/client/Leopard_SealRenderer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animotion-1.21/src/main/java/net/codingseal/animotion/entity/client/SealAnimations.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animotion-1.21/src/main/java/net/codingseal/animotion/entity/client/SealModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animotion-1.21/src/main/java/net/codingseal/animotion/entity/client/SealRenderer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animotion-1.21/src/main/java/net/codingseal/animotion/entity/client/Southern_Elephant_SealAnimations.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animotion-1.21/src/main/java/net/codingseal/animotion/entity/client/Southern_Elephant_SealModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animotion-1.21/src/main/java/net/codingseal/animotion/entity/client/Southern_Elephant_SealRenderer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animotion-1.21/src/main/java/net/codingseal/animotion/entity/custom/Baikal_SealEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animotion-1.21/src/main/java/net/codingseal/animotion/entity/custom/Baikal_SealVariant.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animotion-1.21/src/main/java/net/codingseal/animotion/entity/custom/Crabeater_SealEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animotion-1.21/src/main/java/net/codingseal/animotion/entity/custom/Crabeater_SealVariant.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animotion-1.21/src/main/java/net/codingseal/animotion/entity/custom/Grey_SealEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animotion-1.21/src/main/java/net/codingseal/animotion/entity/custom/Grey_SealVariant.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animotion-1.21/src/main/java/net/codingseal/animotion/entity/custom/Harp_SealEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animotion-1.21/src/main/java/net/codingseal/animotion/entity/custom/Harp_SealVariant.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animotion-1.21/src/main/java/net/codingseal/animotion/entity/custom/Leopard_SealEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animotion-1.21/src/main/java/net/codingseal/animotion/entity/custom/Leopard_SealVariant.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animotion-1.21/src/main/java/net/codingseal/animotion/entity/custom/SealEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animotion-1.21/src/main/java/net/codingseal/animotion/entity/custom/SealVariant.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animotion-1.21/src/main/java/net/codingseal/animotion/entity/custom/Southern_Elephant_SealEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animotion-1.21/src/main/java/net/codingseal/animotion/entity/custom/Southern_Elephant_SealVariant.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animotion-1.21/src/main/java/net/codingseal/animotion/item/ModItems.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animotion-1.21/src/main/java/net/codingseal/animotion/item/ModItemsGroups.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animotion-1.21/src/main/java/net/codingseal/animotion/mixin/ExampleMixin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animotion-1.21/src/main/java/net/codingseal/animotion/world/ModConfiguredFeatures.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animotion-1.21/src/main/java/net/codingseal/animotion/world/ModPlacedFeatures.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animotion-1.21/src/main/java/net/codingseal/animotion/world/gen/ModEntitySpawns.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animotion-1.21/src/main/java/net/codingseal/animotion/world/gen/ModWorldGeneration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animotion-1.21/src/main/resources/animotion.mixins.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animotion-1.21/src/main/resources/assets/animotion/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animotion-1.21/src/main/resources/assets/animotion/lang/en_us.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animotion-1.21/src/main/resources/assets/animotion/textures/entity/seal/seal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animotion-1.21/src/main/resources/assets/animotion/textures/entity/seals/baikal_seal/baikal_seal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animotion-1.21/src/main/resources/assets/animotion/textures/entity/seals/baikal_seal/baikal_seal_variant_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animotion-1.21/src/main/resources/assets/animotion/textures/entity/seals/crabeater_seal/crabeater_seal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animotion-1.21/src/main/resources/assets/animotion/textures/entity/seals/crabeater_seal/crabeater_seal_variant_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animotion-1.21/src/main/resources/assets/animotion/textures/entity/seals/grey_seal/grey_seal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animotion-1.21/src/main/resources/assets/animotion/textures/entity/seals/grey_seal/grey_seal_variant_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animotion-1.21/src/main/resources/assets/animotion/textures/entity/seals/harp_seal/harp_seal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animotion-1.21/src/main/resources/assets/animotion/textures/entity/seals/harp_seal/harp_seal_variant_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animotion-1.21/src/main/resources/assets/animotion/textures/entity/seals/leopard_seal/leopard_seal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animotion-1.21/src/main/resources/assets/animotion/textures/entity/seals/leopard_seal/leopard_seal_variant_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animotion-1.21/src/main/resources/assets/animotion/textures/entity/seals/seal/seal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animotion-1.21/src/main/resources/assets/animotion/textures/entity/seals/seal/seal_variant_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animotion-1.21/src/main/resources/assets/animotion/textures/entity/seals/southern_elephant_seal/southern_elephant_seal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animotion-1.21/src/main/resources/assets/animotion/textures/entity/seals/southern_elephant_seal/southern_elephant_seal_variant_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../animotion-1.21/src/main/resources/fabric.mod.json" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "ProgrammingSeal"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/ProgrammingSeal/Animotion.git",
+    "accountId": "f57f96ef-1e0c-4210-967b-0c8c4abf600f"
+  }
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 7
+}]]></component>
+  <component name="ProjectId" id="389eaiG49vUYWJm673pMFEiK4hX" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Gradle..\\gradlew runClient.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "master",
+    "junie.onboarding.icon.badge.shown": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/projects/animotion/Animotions",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "project.propCompiler",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name=".\gradlew runClient" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=".\gradlew" />
+            <option value="runClient" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.28238.7" />
+        <option value="bundled-js-predefined-d6986cc7102b-a71380e98a7c-JavaScript-IU-252.28238.7" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="614dc790-ab41-487d-8ea5-264387b1ae95" name="Changes" comment="" />
+      <created>1768216280567</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1768216280567</updated>
+      <workItem from="1768216282338" duration="870000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

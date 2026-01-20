@@ -121,9 +121,11 @@ public class Leopard_SealEntity extends AnimalEntity {
     public Leopard_SealVariant getVariant() {
         return Leopard_SealVariant.byId(this.getTypeVariant() & 255);
     }
+
     private int getTypeVariant() {
         return this.dataTracker.get(DATA_ID_TYPE_VARIANT);
     }
+
     private void setVariant(Leopard_SealVariant variant) {
         this.dataTracker.set(DATA_ID_TYPE_VARIANT, variant.getId() & 255);
     }

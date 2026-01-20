@@ -5,7 +5,11 @@ import net.minecraft.entity.AnimationState;
 import net.minecraft.entity.EntityData;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.SpawnReason;
+import net.minecraft.entity.ai.control.AquaticMoveControl;
 import net.minecraft.entity.ai.goal.*;
+import net.minecraft.entity.ai.pathing.EntityNavigation;
+import net.minecraft.entity.ai.pathing.PathNodeType;
+import net.minecraft.entity.ai.pathing.SwimNavigation;
 import net.minecraft.entity.attribute.DefaultAttributeContainer;
 import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.damage.DamageSource;
@@ -13,24 +17,21 @@ import net.minecraft.entity.data.DataTracker;
 import net.minecraft.entity.data.TrackedData;
 import net.minecraft.entity.data.TrackedDataHandlerRegistry;
 import net.minecraft.entity.mob.MobEntity;
-import net.minecraft.entity.passive.AnimalEntity;
-import net.minecraft.entity.passive.FishEntity;
-import net.minecraft.entity.passive.PassiveEntity;
+import net.minecraft.entity.mob.PathAwareEntity;
+
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
 import net.minecraft.nbt.NbtCompound;
-import net.minecraft.recipe.Ingredient;
-import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.Util;
+import net.minecraft.util.math.Vec3d;
 import net.minecraft.world.LocalDifficulty;
 import net.minecraft.world.ServerWorldAccess;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
 
-public class Gray_Reef_SharkEntity extends FishEntity {
+public class Gray_Reef_SharkEntity extends PathAwareEntity {
     public final AnimationState idleAnimationState = new AnimationState();
     private int idleAnimationTimeout = 0;
     public final AnimationState swimAnimationState = new AnimationState();
@@ -43,7 +44,21 @@ public class Gray_Reef_SharkEntity extends FishEntity {
 
     public Gray_Reef_SharkEntity(EntityType<? extends Gray_Reef_SharkEntity> entityType, World world) {
         super(entityType, world);
+        this.moveControl = new AquaticMoveControl(this, 85, 10, 0.02F, 0.1F, false);
+        this.setPathfindingPenalty(PathNodeType.WATER, 0.0F);
+        this.setPathfindingPenalty(PathNodeType.WATER_BORDER, 0.0F);
     }
+    @Override
+    protected EntityNavigation createNavigation(World world) {
+        return new SwimNavigation(this, world);
+    }
+
+
+    @Override
+    public boolean isPushedByFluids() {
+        return false;
+    }
+
     @Override
     protected SoundEvent getAmbientSound() {
         return SoundEvents.ENTITY_COD_AMBIENT;
@@ -59,27 +74,36 @@ public class Gray_Reef_SharkEntity extends FishEntity {
         return SoundEvents.ENTITY_COD_HURT;
     }
 
-    @Override
-    protected SoundEvent getFlopSound() {
-        return SoundEvents.ENTITY_COD_FLOP;
-    }
-    @Override
-    public ItemStack getBucketItem() {
-        return ItemStack.EMPTY;
-    }
+
 
     @Override
     protected void initGoals() {
-        this.goalSelector.add(1, new SwimAroundGoal(this, 1.0D, 40));
-        this.goalSelector.add(1, new WanderAroundFarGoal(this, 1.0D));
-        this.goalSelector.add(2, new LookAroundGoal(this));
+        this.goalSelector.add(1, new MeleeAttackGoal(this, 1.2, true));
+        this.goalSelector.add(2, new SwimAroundGoal(this, 1.0, 40));
+        this.goalSelector.add(3, new LookAtEntityGoal(this, PlayerEntity.class, 10.0F));
+        this.goalSelector.add(4, new LookAroundGoal(this));
+        this.targetSelector.add(1, new ActiveTargetGoal<>(
+                this,
+                PlayerEntity.class,
+                10,
+                true,
+                false,
+                player -> player != null
+                        && player.isAlive()
+                        && !player.isSpectator()
+                        && !player.isInCreativeMode()
+                        && player.isTouchingWater()
+                        && player.getHealth() < player.getMaxHealth() * 0.6f
+        ));
     }
+
 
     public static DefaultAttributeContainer.Builder createAttributes() {
         return MobEntity.createMobAttributes()
                 .add(EntityAttributes.GENERIC_MAX_HEALTH, 18)
-                .add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 0.15)
-                .add(EntityAttributes.GENERIC_FOLLOW_RANGE, 20);
+                .add(EntityAttributes.GENERIC_MOVEMENT_SPEED, 0.9)
+                .add(EntityAttributes.GENERIC_FOLLOW_RANGE, 20)
+                .add(EntityAttributes.GENERIC_ATTACK_DAMAGE, 8.0);
 
     }
 
@@ -112,31 +136,21 @@ private void setupAnimationStates() {
 }
 
 
-
+    @Override
+    public void travel(Vec3d movementInput) {
+        if (this.isTouchingWater()) {
+            super.travel(movementInput);
+            this.setVelocity(this.getVelocity().multiply(0.9D));
+            return;
+        }
+        super.travel(movementInput);
+    }
 
     @Override
     public void tick() {
         super.tick();
-
-        if (this.getWorld().isClient()) {
-            this.setupAnimationStates();
-        }
+        if (this.isTouchingWater()) this.setAir(this.getMaxAir());
     }
-/*
-    @Override
-    public boolean isBreedingItem(ItemStack stack) {
-        return stack.isOf(Items.COD);
-    }
-    @Nullable
-    @Override
-    public PassiveEntity createChild(ServerWorld world, PassiveEntity entity) {
-        Gray_Reef_SharkEntity baby = ModEntities.GRAY_REEF_SHARK.create(world);
-        Gray_Reef_SharkVariant variant = Util.getRandom(Gray_Reef_SharkVariant.values(), this.random);
-        baby.setVariant(variant);
-        return baby;
-    }
- */
-    /* Variant */
 
     @Override
     protected void initDataTracker(DataTracker.Builder builder) {

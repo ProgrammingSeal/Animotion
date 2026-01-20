@@ -3,8 +3,8 @@ package net.codingseal.animotion;
 
 import net.codingseal.animotion.entity.ModEntities;
 
-import net.codingseal.animotion.entity.client.*;
-import net.codingseal.animotion.entity.custom.Hammerhead_SharkEntity;
+import net.codingseal.animotion.entity.client.models.*;
+import net.codingseal.animotion.entity.client.renderers.*;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityModelLayerRegistry;
 import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
@@ -38,7 +38,10 @@ public class AnimotionClient implements ClientModInitializer {
         EntityModelLayerRegistry.registerModelLayer(Hammerhead_SharkModel.HAMMERHEAD_SHARK, Hammerhead_SharkModel::getTexturedModelData);
         EntityRendererRegistry.register(ModEntities.HAMMERHEAD_SHARK, Hammerhead_SharkRenderer::new);
 
-
+        EntityModelLayerRegistry.registerModelLayer(PenguinModel.PENGUIN, PenguinModel::getTexturedModelData);
+        EntityRendererRegistry.register(ModEntities.PENGUIN, PenguinRenderer::new);
+        EntityModelLayerRegistry.registerModelLayer(CrabModel.CRAB, CrabModel::getTexturedModelData);
+        EntityRendererRegistry.register(ModEntities.CRAB, CrabRenderer::new);
 
 
 
