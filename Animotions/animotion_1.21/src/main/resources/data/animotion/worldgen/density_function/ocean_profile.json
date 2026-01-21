@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:add",
+  "argument1": "animotion:ocean_base_drop",
+  "argument2": {
+    "type": "minecraft:mul",
+    "argument1": "animotion:ocean_trench_drop",
+    "argument2": {
+      "type": "minecraft:range_choice",
+      "input": "minecraft:overworld/continents",
+      "min_inclusive": -1.0,
+      "max_exclusive": -0.2,
+      "when_in_range": 1.0,
+      "when_out_of_range": 0.0
+    }
+  }
+}

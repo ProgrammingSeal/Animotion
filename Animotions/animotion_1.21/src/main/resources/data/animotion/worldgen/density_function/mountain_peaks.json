@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:mul",
+  "argument1": "animotion:mountain_mask",
+  "argument2": {
+    "type": "minecraft:add",
+    "argument1": 0.55,
+    "argument2": {
+      "type": "minecraft:mul",
+      "argument1": 0.65,
+      "argument2": {
+        "type": "minecraft:max",
+        "argument1": {
+          "type": "minecraft:min",
+          "argument1": "minecraft:overworld/jaggedness",
+          "argument2": 0.55
+        },
+        "argument2": 0.25
+      }
+    }
+  }
+}
