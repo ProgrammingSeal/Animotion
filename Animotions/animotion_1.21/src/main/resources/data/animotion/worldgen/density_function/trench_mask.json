@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:range_choice",
+  "input": "minecraft:overworld/continents",
+  "min_inclusive": -1.0,
+  "max_exclusive": -0.6,
+  "when_in_range": {
+    "type": "minecraft:noise",
+    "noise": "minecraft:continentalness",
+    "xz_scale": 0.0018,
+    "y_scale": 0.0
+  },
+  "when_out_of_range": 0.0
+}

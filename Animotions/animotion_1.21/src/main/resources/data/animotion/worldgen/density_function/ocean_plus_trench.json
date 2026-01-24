@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:add",
+  "argument1": {
+    "type": "minecraft:mul",
+    "argument1": {
+      "type": "minecraft:range_choice",
+      "input": "minecraft:overworld/continents",
+      "min_inclusive": -1.0,
+      "max_exclusive": -0.15,
+      "when_in_range": -0.40,
+      "when_out_of_range": 0.0
+    },
+    "argument2": {
+      "type": "minecraft:y_clamped_gradient",
+      "from_y": 90,
+      "from_value": 0.0,
+      "to_y": -180,
+      "to_value": 1.0
+    }
+  },
+  "argument2": {
+    "type": "minecraft:mul",
+    "argument1": -0.6,
+    "argument2": "animotion:trench_depth"
+  }
+}
